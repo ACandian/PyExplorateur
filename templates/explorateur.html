@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <script type="text/javascript" src="{{ url_for('static', filename='jquery.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='app.js') }}"></script>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='explorateur.css') }}">
+    <title>Explorateur</title>
+</head>
+<body>
+<div id="main">
+    <fieldset>
+        <legend>Current path</legend>
+        <div id="current_path"></div>
+    </fieldset>
+    <fieldset>
+        <legend>Directories</legend>
+        <div id="directories"></div>
+    </fieldset>
+    <fieldset>
+        <legend>Files</legend>
+        <div id="files"></div>
+    </fieldset>
+</div>
+</body>
+</html>

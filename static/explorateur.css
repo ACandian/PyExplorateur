@@ -1,0 +1,15 @@
+.line-div {
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+}
+
+.link-div {
+    display: inline-block;
+    width: 50%;
+}
+
+.date-div {
+    display: inline-block;
+    width: 50%;
+}
