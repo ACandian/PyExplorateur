@@ -4,12 +4,13 @@ import mimetypes
 import os
 import re
 
-from flask import Flask, safe_join, render_template
+from flask import Flask, render_template
+from werkzeug.security import safe_join
 
 app = Flask(__name__)
 
 config = configparser.ConfigParser()
-config.read(os.path.join(os.path.dirname(__file__), 'config.ini'))
+config.read(os.path.join(os.path.dirname(__file__), 'config.ini'), encoding="UTF-8")
 
 base_dir = config.get('explorateur', 'base_dir', fallback='.')
 
